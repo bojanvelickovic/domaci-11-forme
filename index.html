@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<form class="order">
+			<div>
+				<label for="ime">ime:</label>
+				<input id="ime" type="text" placeholder="unesite vase ime" required />
+			</div>
+
+			<div>
+				<label for="adresa">adresa:</label>
+				<input
+					id="adresa"
+					type="text"
+					placeholder="unesite vasu adresu"
+					required
+				/>
+			</div>
+
+			<div>
+				<label for="email">email:</label>
+				<input
+					id="email"
+					type="email"
+					placeholder="unesite vas email"
+					required
+				/>
+			</div>
+
+			<div>
+				<label for="grad">izaberite grad:</label>
+				<select>
+					<option disabled selected>izaberite grad</option>
+					<option>beograd</option>
+					<option>nis</option>
+					<option>pirot</option>
+				</select>
+			</div>
+
+			<div class="pay">
+				<label for="placanje"> odaberite nacin placanja</label>
+
+				<label for="kartica">
+					<input id="radio" type="radio" name="radio" /> kreditnom karticom
+				</label>
+
+				<label> <input id="radio" type="radio" name="radio" /> pouzecem </label>
+			</div>
+
+			<div>
+				<label for="mejlSubscrabion" checkout>
+					<input id="mejlSubscrabion" type="checkbox" /> zelim da primam mejlove
+					sa ponudama
+				</label>
+			</div>
+			<div>
+				<input type="submit" value="posalji mail" />
+			</div>
+		</form>
+	</body>
+</html>
